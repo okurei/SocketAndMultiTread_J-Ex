@@ -4,7 +4,7 @@ import java.io.*;
 import java.net.Socket;
 import java.util.Scanner;
 
-public class ClientSocket extends Thread {
+public class ClientSocket {
     public static void main(String[] args){
         Scanner scan = new Scanner(System.in);
         try(Socket clientSocket = new Socket("localhost",1234)){
